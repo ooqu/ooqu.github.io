@@ -1,0 +1,317 @@
+div{
+	/*border: 1px solid yellow;*/
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Moseo Sans Cyrl', 'Open Sans', sans-serif;
+	background: white;
+	font-size: 1rem /* 16px */
+}
+div{
+	/*border: 1px solid black;*/
+	display: block;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*-------------- 0. WRAPPER (START) -------------*/
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	margin-top: 2%; /**/
+	margin-bottom: 1%;
+}
+/*-------------- 1. HEADER (START)-------------*/
+header{
+	width: 100%;
+	display: inline-block;
+}
+.header__first_block{
+	width: 16%;
+	height: 120px;
+	background-color: #777777;
+	float:left;
+	margin-right: 2%;
+}
+.header__first_block img{
+	width: 100%;
+	height: 100%;
+}
+.header__second_block{
+	width: 28%;
+	height: 120px;
+	background-color: #777777;
+	float:left;
+	margin-right: 2%;
+}
+.header__third_block{
+	width: 52%;
+	height: 120px;
+	background-color: #777777;
+	float:right;
+}
+.line{
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #333;
+    margin: 1rem auto;
+}
+/*--------------1.HEADER (END)-------------*/
+
+/*-------------- 2.MAIN (START)-------------*/
+main{
+	width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+/*-------------- 2.1 --------- 4_5_6 blocks (START)-------------*/
+section{
+	width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	/*background: pink;*/
+}
+aside{
+	width: 23%;
+	height: 320px;
+	float:left;
+	background-color: #777777;
+}
+.main__5_block{
+	width: 75%;
+	margin-left: 2%;
+	height: 200px;
+	float: right;
+	background-color: #DCDCDC;
+}
+/*
+.main__6_blocks{
+	width: 77%;
+	margin-bottom: 2%;
+
+	max-height: 100%;
+	float: right;
+	overflow: auto;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.main__6_block{
+	margin-top: 2%;
+	width: 17%;
+	height: 120px;
+	float: left;
+	margin-left: 3%;
+	background-color: #DCDCDC;
+}
+*/
+.gallery{
+	width: 77%;
+	margin-bottom: 2%;
+	/*background-color: blue;*/
+	max-height: 100%;
+	float: right;
+}
+.gallery img{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(80%);
+	transition: 1s;
+}
+.gallery img:hover{
+	filter: grayscale(0%);
+	transform: scale(1.0.1);
+}
+.item{
+	margin-top: 2%;
+	width: 17%;
+	height: 120px;
+	float: left;
+	margin-left: 3%;
+	background-color: #DCDCDC;
+	padding: 0 auto;
+}
+/*-------------- 2.1 --------- 4_5_6 blocks (END)-------------*/
+/*-------------- 2.2 --------- 7_8_9 blocks (START)-------------*/
+.main__7_8_9_blocks{
+	width: 100%;
+	height: 200px;
+	max-height: 771px;
+	display: inline-block;
+	/*background: yellow;*/
+	float: left;
+	position: relative;
+}
+.main__7_block{
+	width: 23%;
+	height: 120px;
+	float:left;
+	background-color: #777777;
+	float:left;
+	margin-right: 2%;
+	position: relative;
+	top: 40%;
+}
+.main__7_block img{
+	width: 100%;
+	height: 100%;
+}
+.main__8_block{
+	width: 35.5%;
+	height: 200px;
+	float:left;
+	background-color: #DCDCDC;
+	float:left;
+	margin-right: 2%;
+}
+.main__9_block{
+	width: 37.5%;
+	height: 200px;
+	float:left;
+	background-color: #DCDCDC;
+	float:right;
+}
+/*-------------- 2.2 --------- 7_8_9 blocks (END)-------------*/
+/*-------------- 2.MAIN (END)-------------*/
+
+
+/*-------------- 3.FOOTER (START)-------------*/
+footer{
+	width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+/*-------------- 3.1 --------- 10_11_12_13 blocks(START)-------------*/
+.footer_container_blocks_10_11{
+	/*background-color: #777777;*/
+	width: 68%;
+	height: 180px;
+	margin-right: 2%;
+	float: left;
+}
+.footer__block_10{
+	background-color: #777777;
+	width: 49%;
+	height: 180px;
+	float:left;
+}
+.footer__block_11{
+	background-color: #777777;
+	width: 48%;
+	height: 180px;
+	float: right;
+}
+.footer_container_blocks_12_13{
+
+	width: 30%;
+	height: 180px;
+	float: left;
+	position: relative;
+}
+.footer__block_12{
+	background-color: #777777;
+
+	height: 40%;
+}
+.footer__block_13{
+	background-color: #777777;
+	height: 40%;
+	position: relative;
+	top: 20%;
+}
+.footer__block_13 img{
+	width: 100%;
+	height: 100%;
+}
+/*-------------- 3.1 --------- 10_11_12_13 blocks(END)-------------*/
+/*-------------- 3.FOOTER(END)-------------*/
+/*-------------- 0. WRAPPER (END)-------------*/
+
+/* -------------- -1 Modal Window ------------- */
+
+/*#modalWindowIdContainer{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+
+	
+}
+@keyframes animatetop {
+    from {
+    	top:-30%; opacity:0;
+    }
+    to {
+    	top:-100; opacity:1;
+
+    }
+}
+#modalWindowId{
+	padding: 1%;
+	display: block;
+	width: 450px;
+	max-width: 100%;
+	height: 500px;
+	max-height: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
+	z-index: 10000;
+	overflow: auto;
+	border-radius: 5%;
+	opacity: 1;
+	overflow: auto;
+	background-color: #474747;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation-name: animatetop;
+    animation-duration: 0.5s;
+
+
+}
+
+
+#modalWindowId_close{
+	font-size: 3rem;
+	display: block;
+	float: right;
+	cursor: pointer;
+
+}
+#modalWindowId_img{
+	display: block;
+	float:left;
+	background: #3AB5E6;
+	width: 100%;
+	height: 50%;
+}
+#modalWindowId_num{
+	display: block;
+	float: left;
+	background: #FF9800;
+	width: 100%;
+	height: 100px;
+}
+#dNone{
+	display: none;
+}
+#textInput{
+	display: none;
+}
+*/
